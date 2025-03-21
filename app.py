@@ -46,3 +46,8 @@ def classify():
     except Exception as e:
         print("Error:", e)
         return jsonify({"error": "Internal server error"}), 500
+
+
+@app.route("/", methods=["GET"])
+def health():
+    return "Gemini Flask API is running!"
