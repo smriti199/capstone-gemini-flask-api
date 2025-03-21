@@ -25,12 +25,12 @@ def classify():
         if not description:
             return jsonify({"error": "No description provided"}), 400
 
-        model = genai.GenerativeModel("gemini-pro")
+        model = genai.GenerativeModel("models/gemini-1.5-pro-latest")
 
         #testing
         print("Available Gemini models:")
-        for model in genai.list_models():
-            print(model.name)
+        for model_name in genai.list_models():
+            print(model_name.name)
 
 
         prompt = f"""
