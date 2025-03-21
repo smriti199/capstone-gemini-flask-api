@@ -26,6 +26,11 @@ def classify():
             return jsonify({"error": "No description provided"}), 400
 
         model = genai.GenerativeModel("gemini-pro")
+
+        #testing
+        print("Available Gemini models:")
+        print(genai.list_models())
+
         prompt = f"""
         Classify this hospital delivery item into one of these categories:
         - Samples

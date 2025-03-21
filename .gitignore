@@ -1,0 +1,33 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment
+.env
+.venv/
+venv/
+env/
+*.env
+
+# Byte-compiled
+*.pyc
+
+# macOS
+.DS_Store
+
+# Logs and temporary files
+*.log
+*.sqlite3
+*.db
+
+# VSCode or IDE
+.vscode/
+.idea/
+
+# OS-specific
+Thumbs.db
+
+# Render deploy folders (just in case)
+build/
+dist/
