@@ -29,7 +29,9 @@ def classify():
 
         #testing
         print("Available Gemini models:")
-        print(genai.list_models())
+        for model in genai.list_models():
+            print(model.name)
+
 
         prompt = f"""
         Classify this hospital delivery item into one of these categories:
